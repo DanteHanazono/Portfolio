@@ -18,14 +18,14 @@ class ProjectsController extends Controller
 
     public function create(): View
     {
-        $projects = new Projects();
-        return view('projects.create', compact('projects'));
+        $project = new Projects();
+        return view('projects.create', compact('project'));
     }
 
     public function store(ProjectsRequest $request): RedirectResponse
     {
-        $fileName = time() . '.' . $request->images->extension();
-        $request->images->storeAs('public/images/img', $fileName);
+        $fileName = time() . '.' . $request->image->extension();
+        $request->image->storeAs('public/images/img/portfolio', $fileName);
         Projects::create([
             'title' => $request->title,
             'description' => $request->description,
@@ -35,16 +35,16 @@ class ProjectsController extends Controller
         return redirect()->route('projects.index')->with('success', 'Proyecto creado satisfactoriamente');
     }
 
-    public function show(Projects $id): View
+    public function show(Projects $project): View
     {
-        $projects = Projects::find($id);
-        return view('projects.show', compact('projects'));
+        $project = Projects::find($project->id);
+        return view('projects.show', compact('project'));
     }
 
-    public function edit(Projects $id): View
+    public function edit(Projects $project): View
     {
-        $projects = Projects::find($id);
-        return view('projects.edit', compact('projects'));
+        //$projects = Projects::find($id);
+        return view('projects.edit', compact('project'));
     }
 
     public function update(ProjectsRequest $request, Projects $id): RedirectResponse
@@ -59,9 +59,9 @@ class ProjectsController extends Controller
         ]);
         return redirect()->route('projects.index')->with('success', 'Proyecto actualizado satisfactoriamente');
     }
-    public function destroy(Projects $id): RedirectResponse
+    public function destroy(Projects $project): RedirectResponse
     {
-        $id->delete();
+        $project->delete();
         return redirect()->route('projects.index')->with('success', 'Proyecto eliminado satisfactoriamente');
     }
 }

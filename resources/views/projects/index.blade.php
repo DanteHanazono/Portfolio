@@ -50,14 +50,14 @@ Proyectos
                                     <td>{{ ++$i }}</td>
 
                                     <td>{{ $project->title }}</td>
-                                    <td><img class="img-fluid rounded mb-5" style="width:100px" src="{{ asset('storage').'/'.$proyecto->image}}"></td>
+                                    <td><img class="img-fluid rounded mb-5" style="width:100px" src="{{ asset('storage/images/img/portfolio').'/'.$project->image}}"></td>
                                     <td>{{ $project->description }}</td>
                                     <td>{{ $project->url }}</td>
 
                                     <td>
-                                        <form action="{{ route('proyectos.destroy',$proyecto->id) }}" method="POST">
-                                            <a class="btn btn-sm btn-primary " href="{{ route('projects.show', $id->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Ver') }}</a>
-                                            <a class="btn btn-sm btn-success" href="{{ route('projects.edit', $id->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
+                                        <form action="{{ route('projects.destroy',$project->id) }}" method="POST">
+                                            <a class="btn btn-sm btn-primary " href="{{ route('projects.show', $project->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Ver') }}</a>
+                                            <a class="btn btn-sm btn-success" href="{{ route('projects.edit', $project->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Borrar') }}</button>

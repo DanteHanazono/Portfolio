@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-{{ $projects->title }} "{{ __('Show') Proyecto" }}
+{{ $project->title }} {{ __('Show Proyecto') }}
 @endsection
 
 @section('content')
@@ -22,20 +22,20 @@
 
                     <div class="form-group">
                         <strong>Nombre:</strong>
-                        {{ $projects->title }}
+                        {{ $project->title }}
                     </div>
                     <div class="form-group">
                         <strong>Imagen:</strong>
                         <br />
-                        <img class="img-fluid" src=" {{$projects->image}} " alt="..." style="width:400px; height:200px" />
+                        <img class="img-fluid" src="{{ asset('storage/images/img/portfolio').'/'.$project->image}}" alt="..." style="width:400px; height:200px" />
                     </div>
                     <div class="form-group">
                         <strong>Descripcion:</strong>
-                        {{ $projects->description }}
+                        {{ $project->description }}
                     </div>
-                    <div class="form-group">
+                    <div class=" form-group">
                         <strong>Url:</strong>
-                        {{ $projects->url }}
+                        {{ $project->url }}
                     </div>
 
                 </div>
