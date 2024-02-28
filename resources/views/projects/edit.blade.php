@@ -8,7 +8,7 @@
 <section class="content container-fluid">
     <div class="">
         <div class="col-md-12">
-
+            @includeif('partials.errors')
             <div class="card card-default">
                 <div class="card-header">
                     <span class="card-titile">{{__('Update')}} Proyecto</span>
