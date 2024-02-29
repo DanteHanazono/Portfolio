@@ -34,10 +34,13 @@
                         {{ $project->description }}
                     </div>
                     <div class=" form-group">
-                        <strong>Url:</strong>
+                        <strong>Url del Proyecto:</strong>
                         {{ $project->url }}
                     </div>
-
+                    <div class=" form-group">
+                        <strong>Url del Repositorio:</strong>
+                        {{ $project->git_url }}
+                    </div>
                 </div>
             </div>
         </div>

@@ -40,7 +40,7 @@ Proyectos
                                     <th>Imagen</th>
                                     <th>Descripcion</th>
                                     <th>Url</th>
-
+                                    <th>Repositorio</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -53,7 +53,7 @@ Proyectos
                                     <td><img class="img-fluid rounded mb-5" style="width:100px" src="{{ asset('storage/images/img/portfolio').'/'.$project->image}}"></td>
                                     <td>{{ $project->description }}</td>
                                     <td>{{ $project->url }}</td>
-
+                                    <td>{{$project->git_url}}</td>
                                     <td>
                                         <form action="{{ route('projects.destroy',$project->id) }}" method="POST">
                                             <a class="btn btn-sm btn-primary " href="{{ route('projects.show', $project->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Ver') }}</a>

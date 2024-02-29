@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Events\FileDeletingEvent;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,7 +13,8 @@ class Projects extends Model
         'title',
         'description',
         'image',
-        'url'
+        'url',
+        'git_url'
     ];
     protected $hidden = [
         'paswword',
@@ -21,4 +23,8 @@ class Projects extends Model
         'updated_at'
     ];
     protected $perPage = 20;
+
+    protected $dispatchesEvents = [
+        'deleting' => FileDeletingEvent::class
+    ];
 }

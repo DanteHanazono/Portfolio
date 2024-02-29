@@ -1,13 +1,11 @@
 <?php
 
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', [PortfolioController::class, 'index'])->name('index');
 Route::resource('/projects', ProjectsController::class);
 
 Route::get('/dashboard', function () {

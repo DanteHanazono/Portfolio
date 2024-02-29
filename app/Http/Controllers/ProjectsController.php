@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\FileDeletingEvent;
 use App\Http\Requests\ProjectsRequest;
 use App\Models\Projects;
 use Illuminate\Http\RedirectResponse;
@@ -30,7 +31,8 @@ class ProjectsController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'image' => $fileName,
-            'url' => $request->url
+            'url' => $request->url,
+            'git_url' => $request->git_url
         ]);
         return redirect()->route('projects.index')->with('success', 'Proyecto creado satisfactoriamente');
     }
@@ -55,12 +57,14 @@ class ProjectsController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'image' => $fileName,
-            'url' => $request->url
+            'url' => $request->url,
+            'git_url' => $request->git_url
         ]);
         return redirect()->route('projects.index')->with('success', 'Proyecto actualizado satisfactoriamente');
     }
     public function destroy(Projects $project): RedirectResponse
     {
+        FileDeletingEvent::dispatch($project);
         $project->delete();
         return redirect()->route('projects.index')->with('success', 'Proyecto eliminado satisfactoriamente');
     }
