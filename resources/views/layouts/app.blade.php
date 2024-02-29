@@ -14,7 +14,7 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
     <!-- Scripts -->
-    @vite(['resources/css/styles.css', 'resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/css/styles.css', 'resources/js/app.js'])
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
