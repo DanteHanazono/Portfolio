@@ -47,33 +47,25 @@
                         @guest
                         @if (Route::has('login'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('auth.login') }}">{{ __('Iniciar Sesión') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
                         </li>
                         @endif
 
                         @if (Route::has('register'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('auth.register') }}">{{ __('Registrarse') }}</a>
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
                         </li>
                         @endif
-                        @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                <i class="fa-solid fa-users-line"></i> {{ Auth::user()->name }}
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Cerrar Sesión') }}
-                                </a>
-
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-                            </div>
-                        </li>
                         @endguest
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <div class="float-right">
+                                <x-responsive-nav-link :href="route('logout')" class="btn btn-primary btn-sm float-right" onclick="event.preventDefault();
+                                    this.closest('form').submit();">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i> {{ __('Cerrar Sesion') }}
+                                </x-responsive-nav-link>
+                            </div>
+                        </form>
                     </ul>
                 </div>
             </div>

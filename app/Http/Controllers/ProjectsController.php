@@ -11,6 +11,11 @@ use Illuminate\View\View;
 
 class ProjectsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(): View
     {
         $projects = Projects::paginate();
