@@ -84,7 +84,7 @@
     <section class="page-section bg-primary text-white mb-0" id="about">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Acerca de</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-white">Perfil Profesional</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -93,26 +93,23 @@
             </div>
             <!-- About Section Content-->
             <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">La filosofía que nos motiva en nuestro trabajo es ayudar a las empresas a solucionar sus problemas a través del Diseño Web, Desarrollo Web, Materiales Didácticos Multimedia, Soporte Técnico, Publicidad Empresarial y Marketing.</p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">En el mundo de la informática los cambios son contantes, acelerados y con mucho enfoque innovador, por tal razón nuestro primer paso es cambiar nosotros mismos para luego convencer a otro de que los cambios son favorables partimos de experiencias vividas.</p>
+                <div class="text-justify mt-4">
+                    <p class="lead">Soy un apasionado desarrollador Backend con una sólida experiencia en el framework Laravel. Mi enfoque principal es la creación de soluciones eficientes y escalables para satisfacer las necesidades específicas de los proyectos. Con un profundo conocimiento de las mejores prácticas de desarrollo, me esfuerzo por garantizar la calidad del código, la seguridad y la optimización del rendimiento.</p>
                 </div>
             </div>
             <!-- About Section Button-->
-            <div class="text-center mt-4">
+            <!--<div class="text-center mt-4">
                 <a class="btn btn-xl btn-outline-light" href="https://futurodelweb.com">
                     <i class="fas fa-globe"></i>
                     Ver sitio web ahora!
                 </a>
-            </div>
+            </div>-->
         </div>
     </section>
     <!-- Contact Section-->
     <section class="page-section" id="contact">
         <!-- Client Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Clientes</h2>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
@@ -124,54 +121,54 @@
                 <div class="row">
                     <div class="col-lg-4 col-12 text-center">
                         <div class="box-column">
-                            <div class="box-header box-header-twitter">
-                                <i class="fab fa-twitter-square fa-3x" aria-hidden="true"></i>
+                            <div class="box-header box-header-whatsapp">
+                                <i class="fab fa-whatsapp fa-3x" aria-hidden="true"></i>
 
                             </div>
                             <div class="box-bottom">
-                                <div class="box-title twitter-title">
-                                    Twitter
+                                <div class="box-title whatsapp-title">
+                                    Whatsapp
                                 </div>
                                 <div class="box-text">
-                                    Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.
+                                    Comunicate conmigo desde Whatsapp.
                                 </div>
-                                <a href="#" target="_blank">GO NOW</a>
+                                <a href="https://wa.me/573013907024" target="_blank">Contactame</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12 text-center">
                         <div class="box-column">
-                            <div class="box-header box-header-instagram">
-                                <i class="fab fa-instagram-square fa-3x" aria-hidden="true"></i>
+                            <div class="box-header box-header-telegram">
+                                <i class="fab fa-telegram fa-3x" aria-hidden="true"></i>
 
                             </div>
                             <div class="box-bottom">
-                                <div class="box-title instagram-title">
-                                    Instagram
+                                <div class="box-title telegram-title">
+                                    Telegram
                                 </div>
                                 <div class="box-text">
-                                    Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.
+                                    Comunicate conmigo desde Telegram
                                 </div>
-                                <a href="#" target="_blank">GO NOW</a>
+                                <a href="#" target="_blank">Contactame</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12 text-center">
                         <div class="box-column">
-                            <div class="box-header box-header-facebook">
-                                <i class="fab fa-facebook-square fa-3x" aria-hidden="true"></i>
+                            <div class="box-header box-header-linkedin">
+                                <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
 
                             </div>
                             <div class="box-bottom">
-                                <div class="box-title facebook-title">
-                                    Facebook
+                                <div class="box-title linkedin-title">
+                                    LinkedIn
                                 </div>
                                 <div class="box-text">
-                                    Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.
+                                    Conoce mi perfil de LinkedIn
                                 </div>
-                                <a href="#" target="_blank">GO NOW</a>
+                                <a href="#" target="_blank">Contactame</a>
                             </div>
                         </div>
                     </div>
@@ -187,34 +184,37 @@
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h6 class="text-uppercase mb-4">Dirección</h6>
                     <p class="lead mb-0">
-                        San Salvador, El Salvador
-                        <br />
-                        Clark, MO 65243
+                        Barranquilla, Colombia
                     </p>
                 </div>
-                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h6 class="text-uppercase mb-4">Correo Electronico</h6>
+                    <p class="lead mb-0">
+                        rslopez0611@gmail.com
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h6 class="text-uppercase mb-4">Curriculum</h6>
+                    <a class="btn btn-xl btn-outline-light" href="{{ asset('storage/images/cv/CVRhadyLopez.pdf') }}">
+                        <i class="fas fa-file"></i>
+                        Descargalo
+                    </a>
+                </div>
+                <!-- Footer Social Icons
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h6 class="text-uppercase mb-4">Redes sociales</h6>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                </div>
+                </div>-->
                 <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h6 class="text-uppercase mb-4">acerca de futurodelweb</h6>
-                    <p class="lead mb-0">
-                        Futuro del Web es una web comprometida con sus clientes brindando un servicio de calidad
-                        <a href="https://futurodelweb.com/">futurodelweb.com</a>
-                        .
-                    </p>
-                </div>
             </div>
         </div>
     </footer>
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; futurodelweb 2023</small></div>
+        <div class="container"><small>Copyright &copy; Rhady Lopez 2024</small></div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
