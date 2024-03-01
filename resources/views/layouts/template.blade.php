@@ -150,7 +150,7 @@
                                 <div class="box-text">
                                     Comunicate conmigo desde Telegram
                                 </div>
-                                <a href="#" target="_blank">Contactame</a>
+                                <a href="https://t.me/Dante0611" target="_blank">Contactame</a>
                             </div>
                         </div>
                     </div>
