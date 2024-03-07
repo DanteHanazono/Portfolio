@@ -46,7 +46,7 @@
 
             <div class="container">
                 <div class="content-center">
-                    <div class="cc-profile-image"><a href="#"><img src="{{asset('storage/images/img/Rhady.jpg')}}" alt="Image" /></a></div>
+                    <div class="cc-profile-image"><a href="#"><img src="https://raw.githubusercontent.com/DanteHanazono/Portfolio/main/storage/app/public/images/img/Rhady.jpg" alt="Image" /></a></div>
 
                 </div>
             </div>
