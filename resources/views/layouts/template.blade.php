@@ -24,22 +24,22 @@
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top"><i class="fa fa-code"></i> Portafolio</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="text-white rounded navbar-toggler text-uppercase font-weight-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">
+                    <li class="mx-0 nav-item mx-lg-1"><a class="px-0 py-3 rounded nav-link px-lg-3" href="#portfolio">
                             <i class="fa fa-list"></i> Proyectos</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"><i class="fa fa-user"></i> Acerca de</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{route('login')}}"><i class="fa fa-lock"></i> Login</a></li>
+                    <li class="mx-0 nav-item mx-lg-1"><a class="px-0 py-3 rounded nav-link px-lg-3" href="#about"><i class="fa fa-user"></i> Acerca de</a></li>
+                    <li class="mx-0 nav-item mx-lg-1"><a class="px-0 py-3 rounded nav-link px-lg-3" href="{{route('login')}}"><i class="fa fa-lock"></i> Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="text-center text-white masthead bg-primary">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
 
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Rhady Lopez Meneses</h1>
+            <h1 class="mb-0 masthead-heading text-uppercase">Rhady Lopez Meneses</h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -59,7 +59,7 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Programador Web - BackEnd Laravel</p>
+            <p class="mb-0 masthead-subheading font-weight-light">Programador Web - BackEnd Laravel</p>
 
         </div>
     </header>
@@ -67,7 +67,7 @@
     <section class="page-section portfolio" id="portfolio">
         <div class="container">
             <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Proyectos</h2>
+            <h2 class="mb-0 text-center page-section-heading text-uppercase text-secondary">Proyectos</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -81,10 +81,10 @@
         </div>
     </section>
     <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <section class="mb-0 text-white page-section bg-primary" id="about">
         <div class="container">
             <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">Perfil Profesional</h2>
+            <h2 class="text-center text-white page-section-heading text-uppercase">Perfil Profesional</h2>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
@@ -93,23 +93,16 @@
             </div>
             <!-- About Section Content-->
             <div class="row">
-                <div class="text-justify mt-4">
+                <div class="mt-4 text-justify">
                     <p class="lead">Soy un apasionado desarrollador Backend con una sólida experiencia en el framework Laravel. Mi enfoque principal es la creación de soluciones eficientes y escalables para satisfacer las necesidades específicas de los proyectos. Con un profundo conocimiento de las mejores prácticas de desarrollo, me esfuerzo por garantizar la calidad del código, la seguridad y la optimización del rendimiento.</p>
                 </div>
             </div>
-            <!-- About Section Button-->
-            <!--<div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="https://futurodelweb.com">
-                    <i class="fas fa-globe"></i>
-                    Ver sitio web ahora!
-                </a>
-            </div>-->
         </div>
     </section>
     <!-- Contact Section-->
     <section class="page-section" id="contact">
         <!-- Client Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacto</h2>
+        <h2 class="mb-0 text-center page-section-heading text-uppercase text-secondary">Contacto</h2>
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
@@ -119,7 +112,7 @@
         <div class="box">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-12 text-center">
+                    <div class="text-center col-lg-4 col-12">
                         <div class="box-column">
                             <div class="box-header box-header-whatsapp">
                                 <i class="fab fa-whatsapp fa-3x" aria-hidden="true"></i>
@@ -137,7 +130,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-12 text-center">
+                    <div class="text-center col-lg-4 col-12">
                         <div class="box-column">
                             <div class="box-header box-header-telegram">
                                 <i class="fab fa-telegram fa-3x" aria-hidden="true"></i>
@@ -155,7 +148,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-12 text-center">
+                    <div class="text-center col-lg-4 col-12">
                         <div class="box-column">
                             <div class="box-header box-header-linkedin">
                                 <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
@@ -168,7 +161,7 @@
                                 <div class="box-text">
                                     Conoce mi perfil de LinkedIn
                                 </div>
-                                <a href="#" target="_blank">Contactame</a>
+                                <a href="https://www.linkedin.com/in/rslopez0611" target="_blank">Contactame</a>
                             </div>
                         </div>
                     </div>
@@ -177,43 +170,34 @@
         </div>
     </section>
     <!-- Footer-->
-    <footer class="footer text-center">
+    <footer class="text-center footer">
         <div class="container">
             <div class="row">
                 <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h6 class="text-uppercase mb-4">Dirección</h6>
-                    <p class="lead mb-0">
+                <div class="mb-5 col-lg-4 mb-lg-0">
+                    <h6 class="mb-4 text-uppercase">Dirección</h6>
+                    <p class="mb-0 lead">
                         Barranquilla, Colombia
                     </p>
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h6 class="text-uppercase mb-4">Correo Electronico</h6>
-                    <p class="lead mb-0">
+                <div class="mb-5 col-lg-4 mb-lg-0">
+                    <h6 class="mb-4 text-uppercase">Correo Electronico</h6>
+                    <p class="mb-0 lead">
                         rslopez0611@gmail.com
                     </p>
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h6 class="text-uppercase mb-4">Curriculum</h6>
+                <div class="mb-5 col-lg-4 mb-lg-0">
+                    <h6 class="mb-4 text-uppercase">Curriculum</h6>
                     <a class="btn btn-xl btn-outline-light" href="{{ asset('storage/images/cv/CVRhadyLopez.pdf') }}">
                         <i class="fas fa-file"></i>
-                        Descargalo
+                        Descargar
                     </a>
                 </div>
-                <!-- Footer Social Icons
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h6 class="text-uppercase mb-4">Redes sociales</h6>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                </div>-->
-                <!-- Footer About Text-->
             </div>
         </div>
     </footer>
     <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
+    <div class="py-4 text-center text-white copyright">
         <div class="container"><small>Copyright &copy; Rhady Lopez 2024</small></div>
     </div>
     <!-- Bootstrap core JS-->
