@@ -17,8 +17,8 @@ class ProjectsRequest extends FormRequest
             'title' => 'required',
             'description' => 'required',
             'image' => 'required',
-            'url' => 'required',
-            'git_url' => 'required'
+            'url' => 'nullable',
+            'git_url' => 'nullable'
         ];
     }
 }

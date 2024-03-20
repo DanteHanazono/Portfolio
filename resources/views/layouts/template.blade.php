@@ -188,7 +188,7 @@
                 </div>
                 <div class="mb-5 col-lg-4 mb-lg-0">
                     <h6 class="mb-4 text-uppercase">Curriculum</h6>
-                    <a class="btn btn-xl btn-outline-light" href="{{ asset('storage/images/cv/CVRhadyLopez.pdf') }}">
+                    <a class="btn btn-xl btn-outline-light" href="https://cdn.sit.moe/portfolio%2Fcv%2FCVRhadyLopez.pdf" target="_blank">
                         <i class="fas fa-file"></i>
                         Descargar
                     </a>

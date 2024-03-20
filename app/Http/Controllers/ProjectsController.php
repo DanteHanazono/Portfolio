@@ -6,7 +6,6 @@ use App\Events\FileDeletingEvent;
 use App\Http\Requests\ProjectsRequest;
 use App\Models\Projects;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class ProjectsController extends Controller
@@ -50,7 +49,6 @@ class ProjectsController extends Controller
 
     public function edit(Projects $project): View
     {
-        //$projects = Projects::find($id);
         return view('projects.edit', compact('project'));
     }
 
